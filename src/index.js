@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Education from './Components/Education';
+import Experience from './Components/Experience';
 import GeneralInfo from './Components/GeneralInfo';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -10,6 +11,7 @@ root.render(
   <React.StrictMode>
     <GeneralInfo />
     <Education />
+    <Experience />
   </React.StrictMode>
 );
 
