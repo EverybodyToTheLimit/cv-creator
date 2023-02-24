@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Education from './Components/Education';
 import GeneralInfo from './Components/GeneralInfo';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -8,6 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GeneralInfo />
+    <Education />
   </React.StrictMode>
 );
 

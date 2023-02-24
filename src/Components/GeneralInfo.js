@@ -21,13 +21,12 @@ export default class GeneralInfo extends Component {
             [e.target.name]: e.target.value
         })
         
-        console.log(this.state)
     }
 
   render() {
     return (
         <div>
-            GeneralInfo
+            General Info
             <form>
                 <input name="firstName" type="text" onChange={this.changeInput}></input>
                 <input name="lastName" type="text" onChange={this.changeInput}></input> 
