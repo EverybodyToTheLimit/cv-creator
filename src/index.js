@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Education from './Components/Education';
-import Experience from './Components/Experience';
-import GeneralInfo from './Components/GeneralInfo';
+import App from './Components/App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GeneralInfo />
-    <Education />
-    <Experience />
+    <App/>
   </React.StrictMode>
 );
 
