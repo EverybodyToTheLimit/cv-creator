@@ -32,7 +32,10 @@ export default class App extends Component {
             [e.target.name]: e.target.value
 
         })
-        console.log(e.target.value)
+        
+    }
+
+    addExp = () => {
         
     }
 
@@ -42,6 +45,7 @@ export default class App extends Component {
                 <div className="form"> 
                     <GeneralInfo changeInput = {(e) => this.changeInput(e)} />
                     <Experience changeInput = {(e) => this.changeInput(e)} />
+                    <button onClick={this.addExp()}>Add exp</button>
                     <Education changeInput = {(e) => this.changeInput(e)} />
                 </div>
                 <Cv

@@ -4,17 +4,17 @@ export default class Experience extends Component {
 
   render() {
     return (
-        <div>
+        <h2>
         Experience
         <form>
-            <input name="companyName" type="text" onChange={(e) => this.props.changeInput(e)}></input>
-            <input name="position" type="text" onChange={(e) => this.props.changeInput(e)}></input> 
-            <input name="startDate" type="text" onChange={(e) => this.props.changeInput(e)}></input> 
-            <input name="finishDate" type="text" onChange={(e) => this.props.changeInput(e)}></input>           
+            <input placeholder="Company Name"name="companyName" type="text" onChange={(e) => this.props.changeInput(e)}></input>
+            <input placeholder="Position Held"name="position" type="text" onChange={(e) => this.props.changeInput(e)}></input> 
+            <input placeholder="Start Date"name="startDate" type="date" onChange={(e) => this.props.changeInput(e)}></input> 
+            <input placeholder="End Date" name="finishDate" type="date" onChange={(e) => this.props.changeInput(e)}></input>           
         </form>
     
     
-    </div>
+    </h2>
     )
   }
 }
