@@ -11,23 +11,27 @@ export default class App extends Component {
       super(props)
     
       this.state = {
-        schoolName: "",
-        title: "",
-        dates: "",
-        companyName : "",
+        companyName: "",
         position: "",
         startDate: "",
         finishDate: "",
+        schoolName: "",
+        title: "",
+        dates: "",
         firstName: "",
         lastName: "",
         address: "",
         email: "",
         phone: "",
-        description: ""
+        description: "",
       }
     }
 
+
+
+
     changeInput = (e) => {
+
         this.setState({
             [e.target.name]: e.target.value
 
@@ -35,17 +39,16 @@ export default class App extends Component {
         
     }
 
-    addExp = () => {
-        
-    }
+
 
     render() {
         return (
         <div id="container">
                 <div className="form"> 
                     <GeneralInfo changeInput = {(e) => this.changeInput(e)} />
-                    <Experience changeInput = {(e) => this.changeInput(e)} />
-                    <button onClick={this.addExp()}>Add exp</button>
+                    <h2>Experience</h2>
+                    <Experience changeInput = {(e) => this.changeInput(e)}/>
+                    <h2>Education</h2>
                     <Education changeInput = {(e) => this.changeInput(e)} />
                 </div>
                 <Cv
